@@ -1,0 +1,170 @@
+@import "mixin.scss";
+
+.navigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 3rem;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: clip;
+
+  @include global-padding();
+
+  @include md(sm) {
+    align-items: center;
+  }
+
+  .navigation_logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    @include md(lg) {
+      flex-direction: column;
+    }
+
+    .navigation_logo {
+      width: 6rem;
+      height: auto;
+      margin-right: 2rem;
+      @include md(lg) {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+      }
+      @include md(xl) {
+        width: 4rem;
+      }
+    }
+
+    .navigation_logo_text {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: var(--color-white);
+      font-weight: 800;
+      letter-spacing: 2px;
+
+      @include md(xl) {
+        font-size: 1.6rem;
+      }
+      @include md(lg) {
+        letter-spacing: 1px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .navigation_list {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    list-style: none;
+
+    @include md(sm) {
+      display: none;
+    }
+
+    .navigation_list li {
+      list-style: none;
+    }
+
+    .navigation_link {
+      color: var(--color-white);
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 4rem;
+      @include md(2xl) {
+        margin-right: 2rem;
+      }
+      @include md(xl) {
+        margin-right: 2rem;
+        font-size: 1.1rem;
+      }
+      @include md(lg) {
+        margin-right: 1.5rem;
+        font-size: 1rem;
+      }
+      @include md(md) {
+        margin-right: 1rem;
+        font-size: 0.9rem !important;
+      }
+    }
+
+    .navigation_link_special {
+      a {
+        @include md(xl) {
+          font-size: 1.1rem !important;
+        }
+        @include md(lg) {
+          font-size: 1rem !important;
+        }
+        @include md(md) {
+          padding: 0.5rem 0.75rem;
+          font-size: 0.9rem !important;
+        }
+      }
+    }
+  }
+
+  .navigation_menu {
+    display: none;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    border: 0;
+    z-index: 1;
+
+    @include md(sm) {
+      display: flex;
+    }
+
+    div {
+      height: 5px;
+      border-radius: 10rem;
+      background-color: var(--primary-color);
+      width: 100%;
+    }
+  }
+
+  .navigation_list_mobile {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background-color: var(--primary-color-dark-1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+
+    @include md(sm) {
+      display: flex;
+      position: absolute;
+    }
+
+    .navigation_link_mobile {
+      color: var(--color-white);
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      text-decoration: none;
+    }
+  }
+
+  .navigation_list_mobile_active {
+    display: none;
+    right: 0;
+    @include md(sm) {
+      display: flex;
+      position: absolute;
+    }
+  }
+}
