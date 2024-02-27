@@ -1,0 +1,17 @@
+.services {
+  margin: 4rem 10rem;
+}
+
+.services_header {
+  color: var(--primary-color);
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services_content {
+  display: grid;
+  column-gap: 15rem;
+  row-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
