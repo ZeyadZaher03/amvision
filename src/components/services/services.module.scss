@@ -1,0 +1,31 @@
+@import "mixin.scss";
+
+.services {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @include global-padding();
+}
+
+.services_header {
+  color: var(--primary-color);
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  @include md(sm) {
+    font-size: 2rem;
+  }
+}
+
+.services_content {
+  display: grid;
+  column-gap: 15rem;
+  row-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  @include md(lg) {
+    column-gap: 8rem;
+  }
+  @include md(md) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./services.module.css";
+import styles from "./services.module.scss";
 
 import growth from "./../../assets/images/growth.png";
 
