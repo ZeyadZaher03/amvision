@@ -1,6 +1,10 @@
 :root {
   --primary-color: #13144d;
+  --primary-color-dark-1: #090a29;
   --color-white: #ffffff;
+  --color-gold: #fadf63;
+  --color-black: #0c0c0c;
+  --color-off-white: #eee;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9,14 +13,9 @@
 }
 
 * {
-  overflow: auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-html,
-body {
 }
 
 body {
@@ -30,4 +29,9 @@ h4,
 h5,
 h6 {
   font-family: "Inter", sans-serif;
+}
+
+a,
+img {
+  display: inline-block;
 }
