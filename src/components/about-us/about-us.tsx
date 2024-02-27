@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import amvision_logo from "@/assets/images/amvision-with-background.jpg";
 
-import styles from "./about-us.module.css";
+import styles from "./about-us.module.scss";
 
 export const AboutUs = () => {
   return (
