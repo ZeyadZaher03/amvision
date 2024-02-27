@@ -2,9 +2,9 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin: 3rem 4rem;
+  margin: 3rem 10rem;
   z-index: 999;
-  width: calc(100% - 8rem); /* Subtracting the total horizontal margin */
+  width: calc(100% - 20rem); /* Subtracting the total horizontal margin */
   display: flex;
   overflow: auto;
   justify-content: space-between;
