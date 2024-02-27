@@ -17,3 +17,23 @@ $media: (
     }
   }
 }
+
+@mixin global-padding() {
+  padding: 0 10rem;
+
+  @include md(2xl) {
+    padding: 0 8rem;
+  }
+
+  @include md(xl) {
+    padding: 0 6rem;
+  }
+
+  @include md(lg) {
+    padding: 0 4rem;
+  }
+
+  @include md(sm) {
+    padding: 0 2rem;
+  }
+}
