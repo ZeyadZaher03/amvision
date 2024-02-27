@@ -1,5 +1,10 @@
 import Head from "next/head";
 import { Hero } from "@/components/hero/hero";
+import { Navigation } from "@/components/navigation/navigation";
+import { Footer } from "@/components/footer/footer";
+import { AboutUs } from "@/components/about-us/about-us";
+import { Services } from "@/components/services/services";
+import { ScheduleAnAppointment } from "@/components/schedule-an-appointment/schedule-an-appointment";
 
 export default function Home() {
   return (
@@ -11,7 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Navigation />
         <Hero />
+        <Services />
+        <ScheduleAnAppointment />
+        <AboutUs />
+        <Footer />
       </main>
     </>
   );
