@@ -1,7 +1,7 @@
-import React, { Children } from "react";
+import React from "react";
 
 import Image, { StaticImageData } from "next/image";
-import styles from "./service-item.module.css";
+import styles from "./service-item.module.scss";
 
 interface IServiceItem {
   imgSrc: StaticImageData;

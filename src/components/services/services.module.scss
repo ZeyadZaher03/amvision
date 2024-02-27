@@ -24,6 +24,7 @@
   grid-template-columns: 1fr 1fr;
   @include md(lg) {
     column-gap: 8rem;
+    row-gap: 2rem;
   }
   @include md(md) {
     grid-template-columns: 1fr;
