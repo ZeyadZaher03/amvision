@@ -7,6 +7,7 @@ import { Button } from "../button/button";
 import amvision_logo from "@/assets/images/amvision.png";
 
 import styles from "./navigation.module.scss";
+import Link from "next/link";
 
 export const Navigation = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -22,14 +23,14 @@ export const Navigation = () => {
 
   return (
     <nav className={styles.navigation}>
-      <div className={styles.navigation_logo_container}>
+      <Link href={"/"} className={styles.navigation_logo_container}>
         <Image
           className={styles.navigation_logo}
           src={amvision_logo}
           alt="amvision logo"
         />
         <h1 className={styles.navigation_logo_text}>AM VISION</h1>
-      </div>
+      </Link>
       <ul className={styles.navigation_list}>
         <li>
           <a className={styles.navigation_link} href="#">
@@ -76,7 +77,7 @@ export const Navigation = () => {
             About US
           </a>
         </li>
-        <li className={styles.navigation_link_mobile}>
+        <li>
           <a className={styles.navigation_link_mobile} href="#">
             Book an Appointment
           </a>
