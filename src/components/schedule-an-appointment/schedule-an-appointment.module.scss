@@ -1,5 +1,10 @@
+@import "mixin.scss";
+
 .schedule_an_appointment {
-  padding: 4rem 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include global-padding();
+
   justify-content: space-between;
 
   .schedule_an_appointment_header {
@@ -9,5 +14,8 @@
     font-size: 4rem;
     margin-bottom: 2rem;
     position: relative;
+    @include md(sm) {
+      font-size: 2rem;
+    }
   }
 }
