@@ -9,13 +9,7 @@
   align-items: center;
   overflow: hidden;
   padding: 0 10rem;
-  @include md(lg) {
-    padding: 0 6rem;
-  }
-
-  @include md(sm) {
-    padding: 0 2rem;
-  }
+  @include global-padding();
 
   .header_logo_container {
     position: absolute;
