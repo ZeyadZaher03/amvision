@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import styles from "./hero.module.css";
+import styles from "./hero.module.scss";
 import { Button } from "../button/button";
 
 import amvision_logo from "@/assets/images/amvision.png";
