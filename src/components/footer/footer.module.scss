@@ -1,3 +1,5 @@
+@import "mixin.scss";
+
 .footer {
   padding: 4rem 0 1.5rem 0;
   display: flex;
@@ -16,6 +18,11 @@
   width: 6rem;
   height: auto;
   margin-bottom: 2rem;
+
+  @include md(sm) {
+    margin-bottom: 1rem;
+    width: 4rem;
+  }
 }
 
 .footer_logo_text {
@@ -24,6 +31,9 @@
   color: var(--color-white);
   font-weight: 800;
   letter-spacing: 2px;
+  @include md(sm) {
+    font-size: 1rem;
+  }
 }
 
 .footer_lists_container {
@@ -32,10 +42,16 @@
   justify-content: center;
   align-items: center;
   gap: 10rem;
+
+  @include md(sm) {
+    gap: 1rem;
+    flex-direction: column;
+  }
 }
 
 .footer_list {
   list-style: none;
+  text-align: center;
 }
 
 .footer_list_item {
@@ -43,6 +59,10 @@
   text-decoration: none;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+
+  @include md(sm) {
+    font-size: 0.9rem;
+  }
 }
 
 .footer_list_item:hover {
@@ -64,9 +84,16 @@
   width: 2rem;
   height: auto;
   margin: 0 0.5rem;
+  @include md(sm) {
+    width: 1.5rem;
+  }
 }
 
 .copyright {
   color: var(--color-white);
   text-align: center;
+
+  @include md(sm) {
+    font-size: 0.7rem;
+  }
 }

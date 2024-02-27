@@ -6,7 +6,7 @@ import fb_logo from "@/assets/images/socal_media/fb.png";
 import ig_logo from "@/assets/images/socal_media/ig.png";
 import x_logo from "@/assets/images/socal_media/x.png";
 
-import styles from "./footer.module.css";
+import styles from "./footer.module.scss";
 
 export const Footer = () => {
   return (
