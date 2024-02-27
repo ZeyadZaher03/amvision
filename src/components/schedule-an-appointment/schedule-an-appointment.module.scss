@@ -1,0 +1,13 @@
+.schedule_an_appointment {
+  padding: 4rem 10rem;
+  justify-content: space-between;
+
+  .schedule_an_appointment_header {
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+}
